@@ -121,4 +121,5 @@ Route::get('auth/facebook', [SocialController::class, 'facebookRedirect']);
 Route::get('auth/facebook/callback', [SocialController::class, 'loginWithFacebook']);
 Route::get('privacy', [SocialController::class, 'privacy']);
 Route::get('terms', [SocialController::class, 'termsOfService']);
-Route::get('facebook-delete-data', [SocialController::class, 'deleteData']);
+Route::post('facebook-delete-data', [SocialController::class, 'deleteData']);
+Route::get('facebook-delete-instructions', [SocialController::class, 'deleteDataInstructions'])->name('facebook-delete');

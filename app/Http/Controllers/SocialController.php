@@ -57,4 +57,8 @@ class SocialController extends Controller
 
             return view("welcome")->with("info", "Sorry, You don't have any profile with us.");
     }
+
+    public function deleteDataInstructions(){
+        return view("user.delete-data-instructions");
+    }
 }
